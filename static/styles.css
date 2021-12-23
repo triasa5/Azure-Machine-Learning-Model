@@ -1,102 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*{
-    font-family: 'Jost';
-}
-
-body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+*,
+*:before,
+*:after {
+    padding: 0;
     margin: 0;
-    background: rgba(15, 253, 7, 0);
-    background-image: url('bg.jpg');
-    background-size: 1800px 900px;
-    background-blend-mode: overlay;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
-.h1{
-    font-size: 25px;
-    padding-left: 20px;
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #a6c0fe, #f68084);
+
 }
 
-.h3{
-    font-weight: 400;
-    font-style:italic;
-    font-size: 15px;
+.container {
+    background-color: whitesmoke;
+    width: 70%;
+    min-width: 420px;
+    padding: 30px 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    box-shadow: 20px 90px 25px rgba(0,0,0,0.15); 
 }
 
-.form{
-    background: #37b8df6e;
-    color: black;
-    padding: 2em;
-    border-radius: 30px;
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #1c093c;
+}
+p {
+    text-align: center;
+    position: relative;
+    margin: auto;
     width: 100%;
-    max-width: 420px;
-    margin: 1em;
+    color: #606060;
+    font-size: 14px;
+    font-weight: 400;
 }
-
-.formbox{
-    padding: 5px 0px;
-    font-size: 20px;
+form {
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0 auto;
 }
-
-.btn{
-    padding: 10px 160px;
-    align-content: center;
+.row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px 20px;
+    margin-bottom: 20px;
 }
-
-input.data{
-    border: none;
+span, label {
+    color: #1c093c;
+    font-size: 14px;
+    font-weight: 500;
+}
+input {
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid #c4ace0;
+    margin-top: 5px;
+}
+input:focus {
     outline: none;
-    padding: 0.5em 1em;
-    border-radius: 20px;
-    background-color: #e4e4e4d7;
-    color: rgb(2, 2, 2);
-    font-size: 18px;
-    width: 250px;
-    transition: 0.5s;
+    border-color: #f68084;
 }
 
-input.data:hover{
-    letter-spacing: 2px;
-    transition: 0.5s;
-}
 
-label.label{
-    font-size: 18px;
-    font-weight: bold;
-}
-
-label.label.age{
-    padding-right: 35px ;
-}
-
-label.label.region{
-    padding-right: 15px ;
-}
-
-label.label.smoke{
-    padding-right: 10px ;
-}
-
-button.charges{
+form .button input {
     border: none;
-    outline: none;
-    padding: 0.5em 1em;
-    background-color: rgb(54, 97, 153);
-    color: lightyellow;
-    align-content: center;
-    border-radius: 30px;
-    font-size: 15px;
-    transition: 0.9s;
-    font-weight: bold;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #a6c0fe, #f68084);
+    border-radius: 3px;
+    color: white;
     letter-spacing: 0.2px;
-
+    font-size: 16px;
 }
 
-button.charges:hover{
+#predict:hover {
     letter-spacing: 2px;
     transition: 0.9s;
 }
+
+input:hover {
+    letter-spacing: 2px;
+    transition: 0.7s;
+}
+
+h3 {
+    text-align: center;
+}
+
+.cost-value {
+    padding-top: 10px;
+}
+
+@media(max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+}
+
