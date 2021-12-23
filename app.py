@@ -43,12 +43,14 @@ def result():
     json_data = json.loads(response.text)
     return(round(json_data['Results']['WebServiceOutput0'][0]['Scored Labels'],2))
 
-  age = request.form["enter_age"]
-  sex = request.form["enter_sex"]
-  bmi = request.form["enter_bmi"]
-  children = request.form["enter_children"]
-  smoker = request.form["enter_smoker"]
-  region = request.form["enter_region"]
+  age = request.form["age"]
+  sex = request.form["gender"]  
+  if sex == "others":
+    sex = ""
+  bmi = request.form["bmi"]
+  children = request.form["children"]
+  smoker = request.form["smoker"]  
+  region = request.form["region"]
 
   cost = get_result(age, sex, bmi, children, smoker, region)
   return render_template("index.html", cost = str(cost))
