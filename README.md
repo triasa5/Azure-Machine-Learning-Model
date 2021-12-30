@@ -10,10 +10,11 @@ BMI: 27.9<br>
 Children: 0<br>
 Smoker: yes<br>
 Region: southwest<br>
-And the cost should be 24967.95 USD<br><br>
-**Video of the working prototype:**
+And the cost should be 24967.95 USD<br>
+<br>* *the service is currently unavailable because I have run out of my Azure free credits*<br><br>
+**You can check the recorded video of the working prototype:**
 
 
 
 https://user-images.githubusercontent.com/79649967/147734031-43f61c54-22dd-4735-b211-aaabe7f22c3a.mp4
-<br>* *the service is currently unavailable because I have run out of my Azure free credits*
+
